@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CountUp/Down</title>
+</head>
+<script type="text/javascript" src="countup.js"></script>
+<script type="text/javascript" src="countdown.js"></script>
+<script type="text/javascript" src="lodash.min.js"></script>
+<body>
+
+<script type="text/javascript">
+countdown({
+	callback: function(){
+		console.log(arguments)
+	}
+});
+
+countup({
+	start: new Date(2011,11,11,11,11,11),
+	callback: function(){
+		console.log(arguments)
+	}
+});
+</script>
+</body>
+</html>
